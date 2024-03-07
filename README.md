@@ -1,5 +1,5 @@
 # Autosvp
-##ABSTRACT
+## ABSTRACT
 Detecting structural variations from sequencing data is basic computational problem in bioinformatics and becomes a routine work in cancer diagnosis and treatments. Although several state-of-the-art variant callers have been developed and widely used, the calling performance often fluctuates across different tumor samples and leads to mis-diagnosis or incorrect treatment selections. All of the variant callers are designed with various user parameters and suggest users to actively adjust them for fitting for specific datasets. However, how to obtain the optimal parameter settings that fit for given data is a challenged computational problem. In this paper, we first propose an manual approach to optimal user parameters according to the features of given data. This problem is demonstrated NP-hard, and parameter adjustments may be unstable theoretically. This approach is implemented under a meta-learning with Bayesian optimization module. Adapt to the heterogeneity characteristics of each sequencing data set. To verify the performance and advantages of parameter optimization, we conducted experiments on both simulated and real datasets. The results show that parameter tuning speed and performance are significantly improved.
 
 ## Usage
