@@ -63,18 +63,11 @@ Move your `shinvcf.py` script to the Python 2.7 environment's `bin` directory:**
    python feature.py-o namefeature.csv
    ```
    
-### Initializing Meta-Space and Running Lumpy-sv with Multi-Threading- Python version 3.6 or higher
- ```bash
-   bash sample_histoandmeastd.sh
-   python mulit_2lumpy.py  meanstdev.csv 
-   ```
-### Gradient-Free Parameter Optimization Using Gaussian Processes and Bayesian Optimization
+### Initializing Meta-Space with Multi-Threading- Python version 3.6 or higher
  ```bash
    
-   python GP.py  your.csv 
+   python /SVfolder/main.py
    ```
-### To generate metadat：
-   your.csv + namefeature.csv
 ###  Training a meta-model, in the context of machine learning, involves creating a model that can learn from the outputs or the performance of other models.then get multi_target_regression_model.pth
  ```bash
    
@@ -86,6 +79,7 @@ Move your `shinvcf.py` script to the Python 2.7 environment's `bin` directory:**
    python model.py \Autosvp\samplecopy\1.bam
    print
     prediction_dict = {
+         "w"
         "msw": ,
         "tt": ,
         "back_distance": ,
@@ -96,14 +90,16 @@ Move your `shinvcf.py` script to the Python 2.7 environment's `bin` directory:**
         "discordant_z": 
     }
    ```
-### Testing model in LUMPY-SV
+### Testing DELLY, LUMPY, Manta, BreakDancer, Pindel, MetaSV, SvABA, and SVstabilizer
  ```bash
    
-   python test.py yourpath/PreorRecallorf1.csv
+   python /SVfolder/vsworkflow/callerworkflow.py
    ```
 
 ###  Predicting neoantigens by .vcf in manual & Auto  parameters recommended framework 
  THE computational method termed NeoSV, which incorporates SV annotation, protein fragmentation, and MHC binding prediction together, to predict SV-derived neoantigens. https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03005-9
+        
+        
   ```bash
    
     neosv -vf test.sv.vcf -hf test.hla.txt -np /path/to/netmhcpan -o test -p test -r 75
