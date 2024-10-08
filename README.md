@@ -96,16 +96,5 @@ Move your `shinvcf.py` script to the Python 2.7 environment's `bin` directory:**
    python /SVfolder/vsworkflow/callerworkflow.py
    ```
 
-###  Predicting neoantigens by .vcf in manual & Auto  parameters recommended framework 
- THE computational method termed NeoSV, which incorporates SV annotation, protein fragmentation, and MHC binding prediction together, to predict SV-derived neoantigens. https://genomebiology.biomedcentral.com/articles/10.1186/s13059-023-03005-9
-        
-        
-  ```bash
-   
-    neosv -vf test.sv.vcf -hf test.hla.txt -np /path/to/netmhcpan -o test -p test -r 75
-  ```
-### Evaluating the accuracy of a VCF (Variant Call Format) file in manual & Auto  parameters recommended framework 
-  ```bash
-    python eva.py result.csv
-  ```
+
    
